@@ -73,7 +73,7 @@ func (this queryParam) DoQuery() {
 	ret := this.ParseWeb(doc, docMore)
 	ret.AudioFilePath = audioFilePath
 
-	ret.Print("", this.WithVoice)
+	ret.Print("web", this.WithVoice)
 
 	if this.WithCache {
 		err := ret.SaveLocalDB(dbCache)

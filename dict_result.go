@@ -210,8 +210,8 @@ func DoPlayFile(aFile string) error {
 		return exterror.New(err)
 	}
 
-	if err := cmd.Wait(); err != nil {
-		return exterror.New(err)
-	}
+	//if err := cmd.Wait(); err != nil {
+	//	return exterror.New(err)
+	//}
 	return nil
 }
